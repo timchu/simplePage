@@ -2,9 +2,6 @@
   <head>
     <title>Tim Chu's Home page</title>
     <script> 
-      /* function grab() { 
-        document.getElementById('demo').innerHTML = Date()
-      } */
       function addComment() {
         var text = document.getElementById('commentBox').innerText
         var t = document.createTextNode(text)
@@ -14,7 +11,6 @@
       }
     </script>
     <style>
-      /* Use .projects for styling classes, #project for styling id. Id must be unique*/
       #projects { 
         font-size: 30px; font-weight: bold; font-family: helvetica,arial,sans-serif;
      }
@@ -44,9 +40,6 @@
 
     <button onclick="addComment()">
     Click me to display Date and Time.</button>
-
-    <p id="demo">demo</p>
-    <p id="grabme">Hi! Grab me.</p>
 
   </body>
 </html>
