@@ -7,11 +7,11 @@
         var t = document.createTextNode(text)
         var listItem = document.createElement("LI")
         listItem.appendChild(t)
-        document.getElementById('commentList').appendChild(lItem)
+        document.getElementById('commentList').appendChild(listItem)
       }
     </script>
     <style>
-      #projects { 
+      #comments { 
         font-size: 30px; font-weight: bold; font-family: helvetica,arial,sans-serif;
      }
     </style>
@@ -21,25 +21,21 @@
     <h1>Hi! My name is Tim!</h1>
     <p> Jacob Cole helped me build a site. </p>
 
-    <div><span id = "projects">My</span> Projects</div>
-      <ul> 
-        <li> Python Timer </li>
-        <li> Idea Stack </li>
-      </ul>
-
-    <div>Comments</div>
+    <div id = "comments">Comments</div>
       <ul id = "commentList">
         <li>Hi Tim!</li>
         <li>Hi Jacob!</li>
       </ul>
     <br />
-
-    <div contenteditable = "true" id = "commentBox" style=" border: 1px solid; "> I can edit this. </div>
+    <div contenteditable = "true" id = "commentBox" style=" border: 1px solid; ">
+      New comment.
+    </div>
 
     <h1>My First JavaScript</h1>
 
     <button onclick="addComment()">
-    Click me to display Date and Time.</button>
+      Add Comment!
+    </button>
 
   </body>
 </html>
